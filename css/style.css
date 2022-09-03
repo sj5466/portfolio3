@@ -2,15 +2,12 @@
 
 /* layout */
 body{
-    height: 100%;
+    /* height: 100%; */
     background: #000;
 }
 body.active{
     background: #fff;
 }
-/* .pin-spacer.ative{
-    width: 99.99999%;
-} */
 #header{
     position: fixed;
     left: 0px;
@@ -24,10 +21,12 @@ body.active{
     animation: header 1s forwards;
 }
 #main{
-    height: 100%;
+    /* display: none; */
+    /* height: 100%; */
 }
 #main.active{
-    height: auto;
+    /* display: block; */
+    /* height: auto; */
 }
 
 #section1{
@@ -227,6 +226,10 @@ body.active{
 
 
 /*section1*/
+/* #section1{
+    position: fixed;
+    z-index: 10000;
+} */
 .sec1{
     position: relative;
 }
@@ -1827,47 +1830,39 @@ body.active{
     .sec4__items__item6 .desc_item h3 {
         font-size: 3vw;
         line-height: 4vw;
-    }  
-    .sec6__wrap > div {
+    }
+    #section6 {
         display: block;
     }
-    .sec6__item__desc {
+    .sec6__wrap{
+        height: auto;
         display: block;
     } 
-    .sec6__item__desc h3 {
-        font-size: 6.5vw;
-        line-height: 6.5vw;
-        padding-bottom: 1vw;
+    .sec6__wrap > div {
+        padding: 5vw 4vw;
+    }
+    .sec6__wrap > div:last-child{
+        padding: 5vw 4vw 10vw;
+    }
+    .sec6__item__desc {
+        padding: 0;
+        width: 25%;
     }
     .sec6__item__desc em {
-        font-size: 20px;
+        font-size: 15px;
     }
-    .sec6__item__desc span {
-        font-size: 4.5vw;
+    .sec6__item__desc em br{
+        display: none;
     }
     .sec6__item__img .text h4 {
-        font-size: 5.5vw;
-        line-height: 5.5vw;
+        font-size: 4vw;
+        line-height: 4vw;
     }
-    .sec6__item__img {
-        width: 100%;
-        height: 40vw;
+    .sec6__item__img .text span {
+        font-size: 15px;
     }
-    .sec6__item1 .image img {
-        width: 50%;
-    }
-    .sec6__item2 .image img {
-        width: 52%;
-    }
-    .sec6__item3 .image img {
-        width: 50%;
-    }
-    .sec6__item4 .image img {
-        width: 42%;
-    }
-    .sec6__item5 .image img {
-        top: 50%;
-        width: 55%;
+    .sec6__item__img .text .btn em {
+        font-size: 16px;
     }
     .fa-solid {
         font-size: 12px;
@@ -2144,9 +2139,16 @@ body.active{
     .sec4__items__item8 .image img {
         width: 28vw;
     }
-    .sec6__item__desc em {
-        font-size: 18px;
+    .sec6__wrap > div {
+        min-width: 0;
     }
+    .sec6__item__desc span {
+        font-size: 3.2vw;
+    }
+    .sec6__item__img .text .btn em {
+        font-size: 14px;
+    }
+   
     .sec7__items__btnSt a {
         font-size: 1.7vw;
     }
@@ -2237,7 +2239,7 @@ body.active{
     .sec4__wrap {
         height: 305vw;
     }
-    .sec6__item__img {
+    /* .sec6__item__img {
         width: 100%;
         height: 63vw;
         margin-top: 8vw;
@@ -2274,6 +2276,22 @@ body.active{
     .sec6__item5 .image img {
         top: 50%;
         width: 60%;
+    } */ 
+    .sec6__item__desc h3 {
+        font-size: 6.5vw;
+        line-height: 6.5vw;
+    }
+    .sec6__item__desc span {
+        font-size: 3.2vw;
+    }
+    .sec6__item__desc em {
+        font-size: 12px;
+    }
+    .sec6__item__img .text span {
+        font-size: 12px;
+    }
+    .sec6__item__img .text .btn em {
+        font-size: 12px;
     }
     .sec7__title {
         margin-bottom: 6vw;
@@ -2341,6 +2359,25 @@ body.active{
     }
     .sec4__items__item2 .desc > div {
         font-size: 14px;
+    }
+    .sec6__wrap > div {
+        display: block;
+    }
+    .sec6__item__img {
+        margin-top: 5vw;
+        width: 89vw;
+        height: 46vw;
+    }
+    .sec6__item__desc {
+        padding: 0;
+        width: 45%;
+        height: 25vw;
+    }
+    .sec6__item__desc em {
+        font-size: 14px;
+    }
+    .sec6__item__desc span {
+        font-size: 4.5vw;
     }
     .sec7__title h2 {
         font-size: 10vw;
@@ -2464,55 +2501,18 @@ body.active{
     }
     .sec4__items__item7 .image {
         height: 35vw;
-    }
-    .sec6__item__img {
-        width: 100%;
-        height: 73vw;
-        margin-top: 8vw;
-    }
-    .sec6__wrap {
-        height: 86vh;
-    }
-    .sec6__item__desc h3 {
-        font-size: 9vw;
-        line-height: 9vw;
-    }
-    .sec6__item__desc em {
-        font-size: 16px;
-    }
-    .sec6__item__desc span {
-        font-size: 6.5vw;
-    }
-    .sec6__item__img .text span {
-        font-size: 14px;
-    }
-    .sec6__item__img .text .btn em {
-        font-size: 14px;
-    }
-    .sec6__item__img .text h4 {
-        font-size: 8vw;
-        line-height: 8vw;
-    }
-    .sec6__item__img {
-        margin-top: 17vw;
-    }
-    .sec6__item1 .image img {
-        width: 65%;
-    }
-    .sec6__item2 .image img {
-        width: 62%;
-    }
-    .sec6__item3 .image img {
-        width: 60%;
-    }
-    .sec6__item4 .image img {
-        width: 52%;
-    }
-    .sec6__item5 .image img {
-        width: 65%;
-    }
+    }   
     .sec4__items__item8 .image img {
         width: 31vw;
+    }
+    .sec6__item__desc {
+        width: 60%;
+    }
+    .sec6__item__desc em {
+        font-size: 12px;
+    }
+    .sec6__item__img {
+        margin-top: 7vw;
     }
     .sec9__title h2 {
         font-size: 10vw;
